@@ -12,3 +12,7 @@ console.log("Area of Rectangle in feet : ",areaInFeet);
 console.log("Area of Rectangle in Meter : "
 ,Math.floor(areaInFeet / oneFeetToMeter)); 
 
+let givenPlots = 25;
+let oneMeterToAcre = 0.00025;
+let area = (givenPlots * oneMeterToAcre);
+console.log("Area of 25 plots :", area,"m");
