@@ -6,6 +6,7 @@ for(let i = 0; i < 5; i++){
 	let randomCheck = Math.floor(Math.random() * 899 + 100);
 	randomValues[i] = randomCheck;
 }
+
 //MaxNum
 if (( randomValues[0] > randomValues[1]) && ( randomValues[0] > randomValues[2])
 	 && ( randomValues[0] > randomValues[3]) && ( randomValues[0] > randomValues[4]))
@@ -22,6 +23,7 @@ else if (( randomValues[3] > randomValues[0]) && ( randomValues[3] > randomValue
 else if ((randomValues[4] > randomValues[0]) && ( randomValues[4] > randomValues[2]) 
 	&& ( randomValues[4] > randomValues[3]) && (randomValues[4] > randomValues[1]))
 	        maxNum = randomValues[4];
+
 //MinNum
 if (( randomValues[0] < randomValues[1]) && ( randomValues[0] < randomValues[2])
          && ( randomValues[0] < randomValues[3]) && ( randomValues[0] < randomValues[4]))
