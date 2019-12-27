@@ -5,17 +5,19 @@ let bet = 1;
 let i = 1;
 let wins = 0;
 let loss = 0;
-if (goal <= cash)
+if (goal <= cash) 
             console.log("goal is less than or equal to cash");
 else {
-	while (i <= bet ) {
+	while (cash == goal) {
 		if (Math.random() < 0.5) {
-			loss++;
+			bet++;
 			cash = cash--;
+			i++;
 		}
 		else {
-			wins++;
+			bet++;
 			cash = cash++;
+			i++;
 		}
 	}
 }
