@@ -5,12 +5,6 @@ for(let i = 0; i < 10; i++){
 	randomNum[i] = randomCheck;
 }
 
-console.log("10 Random Number : ",randomNum);
-largestNum = getSecondLargest(randomNum);
-smallestNum = getSecondSmallest(randomNum);
-console.log("2nd Largest Number : ",largestNum,
-		"\n2nd Smallest Number : ", smallestNum);
-
 function getSecondLargest(randomNum){
     let first = 0,second = 0;
     for(let i = 0; i < randomNum.length; i++){
@@ -39,3 +33,8 @@ function getSecondSmallest(randomNum){
     return second;
 }
 
+console.log("10 Random Number : ",randomNum);
+largestNum = getSecondLargest(randomNum);
+smallestNum = getSecondSmallest(randomNum);
+console.log("2nd Largest Number : ",largestNum,
+                "\n2nd Smallest Number : ", smallestNum);
