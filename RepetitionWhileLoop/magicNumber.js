@@ -1,9 +1,26 @@
 let read = require('readline-sync');
-let num = read.question("Enter the number in between 1 to 100 :");
-let i = 0;
-let mid = num / 2;
-while ( i < mid || i > mid ){
-	
-	console.log("magic Number",num);
-	i++;
+let flag = 0;
+let min = 0;
+let max = 100;
+let mid = Math.round(min + max / 2);
+while ( flag == 0 ){
+console.log("Is Magic Number is Less or Greater or Same ",mid);
+console.log(" 1.Greater/n 2.Less/n 3.MagicNum");
+let num = read.questionInt("Enter Your Choice: ");
+switch(num){
+case 1:
+	min = mid;
+	max = 100;
+	mid = Math.round(min + max / 2);
+	break;
+case 2:
+	max = mid;
+	min = 0;
+	mid = Math.round(min + max /2);
+	break;
+case 3:
+	console.log("Magic Num is :",mid);
+	flag = 1;
+	break;
+}
 }
