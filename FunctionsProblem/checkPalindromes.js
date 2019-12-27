@@ -7,13 +7,12 @@ while( num1 > 0 ){
         rem = num1 % 10;
         num1 = parseInt(num1 / 10 );
         final = final * 10 + rem;
-    }
+}
+checkpalindrome(final)
 
-    if (final == temp)
+function checkpalindrome(final){
+if (final == temp)
         console.log("Number is Palindrome");
 else
-console.log("Number is not Palindrome");
-
- 
-
-
+	console.log("Number is not Palindrome")
+}
