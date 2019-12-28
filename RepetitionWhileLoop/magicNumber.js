@@ -1,23 +1,20 @@
-let read = require('readline-sync');
-let flag = 0;
-let min = 0;
-let max = 100;
-let mid;
-while ( flag == 0 ){
-	mid = (min + max / 2);
-	console.log("Is Magic Number is Less or Greater or Same ",mid);
-	console.log(" 1.Greater/n 2.Less/n 3.MagicNum");
-	let num = read.questionInt("Enter Your Choice: ");
-switch(num){
-case 1:
-	min = mid-1;
-	break;
-case 2:
-	max = mid+1;
-	break;
-case 3:
-	console.log("Magic Num is :",mid);
-	flag = 1;
-	break;
-}
+let readlineSync = require('readline-sync');
+let first = 0;
+let last = 100;
+let mid ;
+let flag = false;
+while ( flag == false ){
+	mid = parseInt((first + last) / 2);	
+	console.log(mid);
+	let choice = readlineSync.questionInt('1.less\n2.greater\n3.this\nplease enter the Your choice : ');
+	if(choice==1){
+		last=mid-1;
+	}
+	if(choice==2){
+		first=mid+1;
+	}
+	if(choice==3){
+		console.log("your magic number is : "+mid );		
+		flag = true;
+	}
 }
